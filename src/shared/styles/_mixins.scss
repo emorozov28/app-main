@@ -1,0 +1,49 @@
+@mixin reset-button() {
+    user-select: none;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none;
+    padding: 0;
+    opacity: 1;
+    border-radius: 0;
+    text-transform: none;
+    min-width: auto;
+    max-width: none;
+    transform: none;
+    box-sizing: border-box;
+}
+
+
+@mixin typography($fontSize, $lineHeight, $letterSpacing, $fontWeight, $fontFamily: inherit) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin tablet_and_phone {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
