@@ -1,25 +1,6 @@
 @use "@/shared/styles/mixins" as *;
-:where(.button) {
-    &.-fullwidth {
-        width: 100%;
-    }
 
-    &.-clear {
-        @include reset-button;
-        background: no-repeat;
-        border: none;
-        width: auto;
-    }
-
-    &.-large {
-        height: 64px;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: -0.24px;
-    }
-}
-
-//.button {
+.button {
     //@include reset-button;
     //display: flex;
     //box-sizing: border-box;
@@ -41,21 +22,21 @@
     //cursor: pointer;
     //background: #08153f;
 
-    //&.-fullwidth {
-    //    width: 100%;
-    //}
-    //
-    //&.-clear {
-    //    @include reset-button;
-    //    background: no-repeat;
-    //    border: none;
-    //    width: auto;
-    //}
-    //
-    //&.-large {
-    //    height: 64px;
-    //    font-size: 20px;
-    //    font-weight: 700;
-    //    letter-spacing: -0.24px;
-    //}
-//}
+    &.-fullwidth {
+        width: 100%;
+    }
+
+    &.-clear {
+        @include reset-button;
+        background: no-repeat;
+        border: none;
+        width: auto;
+    }
+
+    &.-large {
+        height: 64px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.24px;
+    }
+}
