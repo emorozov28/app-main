@@ -1,8 +1,9 @@
-import {configureStore} from "@reduxjs/toolkit";
+import {configureStore} from '@reduxjs/toolkit';
+import themeReducer from '@/features/theme-switcher';
 
 const store = configureStore({
     reducer: {
-
+        theme: themeReducer
     },
     // middleware: (getDefaultMiddleware) =>
 
