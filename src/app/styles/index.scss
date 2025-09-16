@@ -10,7 +10,7 @@
     --button-border-color: #fff;
 
     --main-border-radius: 8px;
-    --main-color: color-mix(in oklab, var(--background) 90%, black)
+    --main-color-mix: color-mix(in oklab, var(--background) 95%, black)
 
 }
 
@@ -27,4 +27,9 @@ body {
 
 .svg-icon {
     stroke: var(--text);
+}
+
+:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--text);
 }

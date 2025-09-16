@@ -1,4 +1,3 @@
-import css from './themeSwitcher.module.scss';
 import {ComponentType, FC, SVGProps} from 'react';
 
 import SvgSun from '@/shared/assets/icons/theme/sun.svg?react';

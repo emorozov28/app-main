@@ -16,12 +16,17 @@
 .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
 }
 
 .logo {
     position: relative;
-    margin-right: auto;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
 }
 
 .nav {

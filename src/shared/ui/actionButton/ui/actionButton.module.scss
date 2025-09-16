@@ -22,10 +22,10 @@
     //cursor: pointer;
     //background: #08153f;
 
-    &:focus-visible {
-        outline: none;
-        box-shadow: 0 0 0 1px var(--text);
-    }
+    //&:focus-visible {
+    //    outline: none;
+    //    box-shadow: 0 0 0 1px var(--text);
+    //}
 
 }
 
@@ -38,6 +38,11 @@
     background: no-repeat;
     border: none;
     width: auto;
+
+    //&:focus-visible {
+    //    outline: none;
+    //    box-shadow: 0 0 0 1px var(--text);
+    //}
 }
 
 :where(.-large) {
@@ -54,6 +59,13 @@
     align-items: center;
     justify-content: center;
     border-radius: var(--main-border-radius);
-    //background-color: var(--main-color);
+    border-radius: 50%;
+    //background-color: var(--main-color-mix);
     cursor: pointer;
+    transition: background-color .15s;
+
+    &:hover {
+        background-color: var(--main-color-mix);
+    }
+
 }

@@ -3,7 +3,7 @@ import {useAppDispatch, useAppSelector} from '@/app/hook';
 import {getTheme} from '@/features/theme-switcher';
 import {nextTheme} from '@/features/theme-switcher/model/slice';
 import {ThemeIcon} from '@/features/theme-switcher/ui/themeIcon';
-import {Button} from '@/shared/ui/button';
+import {ActionButton, ActionButtonType} from '@/shared/ui/actionButton';
 
 export const ThemeSwitcher = () => {
     const dispatch = useAppDispatch();
@@ -15,7 +15,8 @@ export const ThemeSwitcher = () => {
 
     return (
       <>
-          <Button
+          <ActionButton
+              actionType={ActionButtonType.BUTTON}
               clear={true}
               square={true}
               onClick={changeTheme}
@@ -23,7 +24,7 @@ export const ThemeSwitcher = () => {
               aria-label={'Toggle theme'}
           >
               <ThemeIcon theme={theme} size={20} />
-          </Button>
+          </ActionButton>
       </>
     );
 };

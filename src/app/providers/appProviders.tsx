@@ -1,4 +1,4 @@
-import {IParentComponent} from '@/features/types/types';
+import {IParentComponent} from '@/shared/types/types';
 import {ThemeProvider} from '@/app/providers/themeProvider';
 import {Suspense} from 'react';
 
