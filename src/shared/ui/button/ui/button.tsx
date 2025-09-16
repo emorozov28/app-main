@@ -1,17 +1,10 @@
 import css from './button.module.scss';
 import cn from 'classnames';
-import {ButtonHTMLAttributes, DetailedHTMLProps, FC, ReactNode} from 'react';
-
-interface IButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-    children?: ReactNode,
-    type?: 'button' | 'submit' | 'reset',
-    className?: string,
-    fullWidth?: boolean,
-    clear?: boolean,
-}
+import { FC} from 'react';
+import {IButtonProps} from './type';
 
 export const Button:FC<IButtonProps> = (props) => {
-    const {children, type = 'button', className, fullWidth, clear, ...otherProps} = props;
+    const {children, type = 'button', className, fullWidth, clear, square, ...otherProps} = props;
 
     return (
         <button
@@ -20,6 +13,7 @@ export const Button:FC<IButtonProps> = (props) => {
                 {
                     [css['-fullwidth']]: fullWidth,
                     [css['-clear']]: clear,
+                    [css['-square']]: square,
                 },
                 className
             )}

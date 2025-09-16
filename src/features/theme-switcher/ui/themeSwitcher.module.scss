@@ -1,17 +1,5 @@
 @use '@/shared/styles/mixins';
 
 .switcher {
-    @include mixins.reset-button;
-
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: color-mix(in oklab, var(--background) 90%, black);
-}
-
-.icon {
-    stroke: var(--text);
+    position: relative;
 }

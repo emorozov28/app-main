@@ -8,3 +8,7 @@ export interface IParentComponent {
 export interface ILayoutComponent {
     children: ReactNode;
 }
+
+export interface IChildComponent {
+    className?: string;
+}
