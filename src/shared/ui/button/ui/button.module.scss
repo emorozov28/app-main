@@ -1,0 +1,59 @@
+@use '@/shared/styles/mixins';
+
+:where(.button) {
+    //@include reset-button;
+    //display: flex;
+    //box-sizing: border-box;
+    //justify-content: center;
+    //align-items: center;
+    //font-weight: 600;
+    //font-size: var(--button-font);
+    //line-height: 20px;
+    //outline: none;
+    //transition: all 0.3s linear;
+    //height: var(--button-height);
+    //border-radius: var(--button-border-radius);
+    //border: 1px solid transparent;
+    //width: var(--button-width);
+    //max-width: var(--button-width);
+    //font-family: inherit;
+    //color: var(--button-color-text);
+    //padding: 10px 16px;
+    //cursor: pointer;
+    //background: #08153f;
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 1px var(--text);
+    }
+
+}
+
+:where(.-fullwidth) {
+    width: 100%;
+}
+
+:where(.-clear) {
+    @include mixins.reset-button;
+    background: no-repeat;
+    border: none;
+    width: auto;
+}
+
+:where(.-large) {
+    height: 64px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+}
+
+:where(.-square) {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--main-border-radius);
+    //background-color: var(--main-color);
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+@use '@/shared/styles/mixins';
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include mixins.tablet_and_phone {
+        width: calc(100% - 48px);
+    }
+
+    &.-full {
+        max-width: 100%;
+    }
+}

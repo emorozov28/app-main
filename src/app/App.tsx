@@ -1,13 +1,16 @@
-import {ThemeSwitcher} from '@/features/theme-switcher';
+import {Header} from '@/widgets/header/';
+import {Container} from '@/shared/ui/container';
 
 const App = () => {
 
     return (
         <>
-            <div className='container'>
-                <ThemeSwitcher />
-                <div>App</div>
-            </div>
+            <Header />
+            <main>
+                <Container>
+                    <div>App</div>
+                </Container>
+            </main>
         </>
     )
 };

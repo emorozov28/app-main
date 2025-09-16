@@ -20,5 +20,5 @@ const ICONS = {
 export const ThemeIcon: FC<IThemeIconProps> = ({ theme, size }) => {
     const Icon = ICONS[theme]
 
-    return <Icon width={size} height={size} aria-hidden={true} className={css['icon']} />
+    return <Icon width={size} height={size} aria-hidden={true} className={'svg-icon'} />
 };

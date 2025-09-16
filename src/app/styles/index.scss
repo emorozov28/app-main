@@ -8,6 +8,10 @@
     --button-color-text: #fff;
     --button-border-radius: 4px;
     --button-border-color: #fff;
+
+    --main-border-radius: 8px;
+    --main-color: color-mix(in oklab, var(--background) 90%, black)
+
 }
 
 * {
@@ -21,8 +25,6 @@ body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
 }
 
-.container {
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
+.svg-icon {
+    stroke: var(--text);
 }
